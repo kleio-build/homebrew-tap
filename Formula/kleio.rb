@@ -5,21 +5,21 @@
 class Kleio < Formula
   desc "Kleio CLI — capture work discovered during development"
   homepage "https://github.com/kleio-build/kleio-cli"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.2/kleio_0.0.2_darwin_x86_64.tar.gz"
-      sha256 "9ed30d6411db6e418cb4687079b2b4f98eb9614cf47ad4a50199a52762b3dab3"
+      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.3/kleio_0.0.3_darwin_x86_64.tar.gz"
+      sha256 "89a5b88f37a1f13aa3ad141784d939abf782c2f892779909ecefa2f08f35cc76"
 
       define_method(:install) do
         bin.install "kleio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.2/kleio_0.0.2_darwin_arm64.tar.gz"
-      sha256 "93c7ede05abcd0868ed5100205f795474ba0b579f220a993fa008f12f9c95fbc"
+      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.3/kleio_0.0.3_darwin_arm64.tar.gz"
+      sha256 "408383692867e0d07c4e12a021484fd57c3c2d87132ab7c90ad487f58a5a0eb6"
 
       define_method(:install) do
         bin.install "kleio"
@@ -29,15 +29,15 @@ class Kleio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.2/kleio_0.0.2_linux_x86_64.tar.gz"
-      sha256 "6891b8e9c1cde03605e1b2352260ef097f10570154a20d79afabbb91b783ca89"
+      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.3/kleio_0.0.3_linux_x86_64.tar.gz"
+      sha256 "dd913c0020796c082600b2c05645b5687b84da03eb36648b21f1705823a99a55"
       define_method(:install) do
         bin.install "kleio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.2/kleio_0.0.2_linux_arm64.tar.gz"
-      sha256 "f832c2a6a82c7a16b56c7b66e35fdcdbcaab5bfe5c37d705b2475f5f697e9cd1"
+      url "https://github.com/kleio-build/kleio-cli/releases/download/v0.0.3/kleio_0.0.3_linux_arm64.tar.gz"
+      sha256 "1a9b41059c187ff2ed62a927fbb0dab936092fd1460c96117046e45606a8a6d7"
       define_method(:install) do
         bin.install "kleio"
       end
